@@ -1,4 +1,44 @@
-A tool for deciphering post-transcriptional regulations in omics studies
+# POSTCODE
+
+**POSTCODE** is a computational framework designed to characterize and interpret
+post-transcriptional regulatory mechanisms by integrating transcriptomic,
+translational, and protein-related features.
+
+The associated **Shiny web application** allows users to upload gene-level data
+(e.g. log2 fold-changes) and explore how intrinsic and extrinsic transcript
+features relate to protein expression and post-transcriptional regulation.
+
+🔗 **Live Shiny application**:  
+👉 https://postcode-lab.shinyapps.io/POSTCODE/
+
+---
+
+##  Features
+
+- Annotation of gene-level input with post-transcriptional proxies
+- Rolling-median and spline-based trend visualization
+- Integrated fGSEA analysis across multiple regulatory layers
+- Downloadable tables and plots
+- Robust error handling and deployment-ready architecture
+
+---
+
+##  Input format
+
+The application expects a **tab-delimited `.txt` file** with at least two columns:
+
+| Column | Description |
+|------|-------------|
+| Gene name | Gene symbol (HGNC, uppercase recommended) |
+| log2FC | Log2 fold-change value |
+
+Example:
+```text
+TP53    -1.25
+MYC      2.10
+
+
+POSTCODE : A tool for deciphering post-transcriptional regulations in omics studies
 
 Several studies have described the lack of correlation between expression at transcriptional and protein levels. This discrepancy can be explained by a multitude of post-transcriptional regulatory mechanisms, such as transcript sequestration, RNA decay, translational efficiency, and protein degradation.
 Due to the lack of existing tools, these post-transcriptional mechanisms have remained in the blind spot of omics studies. To bridge this gap, we developed POSTCODE, a bioinformatics pipeline for annotating and reanalyzing omics datasets with PTR-related proxies. By incorporating PTR’s proxies into differential expression analyses, POSTCODE enables the detection of post-transcriptional deregulations, refining functional analysis interpretations and revealing regulatory mechanisms that standard transcriptome or proteome analyses might miss.
