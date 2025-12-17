@@ -13,7 +13,7 @@ features relate to protein expression and post-transcriptional regulation.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Annotation of gene-level input with post-transcriptional regulatory proxies
 - Rolling-median, raw, and spline-based trend visualization
@@ -23,7 +23,7 @@ features relate to protein expression and post-transcriptional regulation.
 
 ---
 
-## 📥 Input format
+##  Input format
 
 The application expects a **tab-delimited `.txt` file** with two columns:
 
