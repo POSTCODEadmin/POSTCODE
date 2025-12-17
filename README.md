@@ -37,6 +37,9 @@ Example:
 TP53    -1.25
 MYC      2.10
 
+---
+
+##  More informations
 
 POSTCODE : A tool for deciphering post-transcriptional regulations in omics studies
 
