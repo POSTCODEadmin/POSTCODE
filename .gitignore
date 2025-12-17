@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# History
+.Rhistory
+
+# Databases (NEVER public)
+*.sqlite
+*.db
+Postcode.sqlite
+
+# Runtime results
+postcode_results/
+ranked_data.rnk
+
+# Temp files
+*.rnk
+
